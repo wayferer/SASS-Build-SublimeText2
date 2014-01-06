@@ -1,6 +1,6 @@
 {
 
-	"cmd": ["sass", "--update", "$file:${file_path}/${file_base_name}.css", "--stop-on-error", "--no-cache"],
+	"cmd": ["sass", "--update", "$file:${project_path}/web/resources/css/${file_base_name}.css", "--stop-on-error", "--no-cache","-r","sass-media_query_combiner"],
 	"selector": "source.sass, source.scss",
 	"line_regex": "Line ([0-9]+):",
 
